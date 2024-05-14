@@ -206,7 +206,7 @@ class BedrockRuntimeService extends \AwsUtilities\AWSServiceClass
                     'width' => 512,
                     'seed' => $seed
                 ]
-            ]);
+            ], JSON_THROW_ON_ERROR);
 
             $result = $this->bedrockRuntimeClient->invokeModel([
                 'contentType' => 'application/json',

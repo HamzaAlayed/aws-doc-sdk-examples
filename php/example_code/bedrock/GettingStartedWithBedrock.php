@@ -11,11 +11,14 @@
 # snippet-start:[php.example_code.bedrock.basics.scenario]
 namespace Bedrock;
 
+/**
+ *
+ */
 class GettingStartedWithBedrock
 {
     protected BedrockService $bedrockService;
 
-    public function runExample()
+    public function runExample(): void
     {
         echo("\n");
         echo("--------------------------------------------------------------\n");
